@@ -1,0 +1,25 @@
+body{
+    background-color: dodgerblue;
+}
+
+.contaniner{
+    width: 100%;
+    height: 300px;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+}
+.item{
+    width: 150px;
+    height: 150px;
+    background-color: chocolate;
+    border: 1px solid black;
+    flex: 1;
+}
+
+@media (max-width: 600px){
+    .contaniner{
+        flex-direction: column;
+        align-items: center;
+    }
+}
