@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth Scrolling</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      section {
+        height: 100vh;
+        padding: 20px;
+        font-size: 24px;
+      }
+
+      nav {
+        position: fixed;
+        top: 10px;
+      }
+
+      nav a {
+        margin-right: 15px;
+        color: #3498db;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#section1">Section 1</a>
+      <a href="#section2">Section 2</a>
+      <a href="#section3">Section 3</a>
+    </nav>
+
+    <section id="section1" style="background-color: #f1c40f">Section 1</section>
+    <section id="section2" style="background-color: #2ecc71">Section 2</section>
+    <section id="section3" style="background-color: #e74c3c">Section 3</section>
+  </body>
+</html>

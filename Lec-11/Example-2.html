@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Hover Effect</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .image-hover {
+        margin: 5%;
+        width: 300px;
+        border: 2px blueviolet solid;
+        transition: transform 0.3s ease;
+      }
+
+      .image-hover:hover {
+        transform: scale(2.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="image-hover"
+        src="https://via.placeholder.com/300"
+        alt="Placeholder Image"
+      />
+    </div>
+  </body>
+</html>
