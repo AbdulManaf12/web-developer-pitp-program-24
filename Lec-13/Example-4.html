@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #3498db;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      nav {
+        background-color: #2ecc71;
+        padding: 10px;
+      }
+
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .content {
+        flex: 1;
+        margin: 10px;
+        padding: 20px;
+        background-color: #f8f9fa;
+      }
+
+      /* Responsive adjustments for tablets */
+      @media (min-width: 600px) {
+        .container {
+          flex-direction: row; /* Two-column layout */
+        }
+      }
+
+      /* Responsive adjustments for desktops */
+      @media (min-width: 1024px) {
+        nav {
+          text-align: center;
+        }
+
+        .container {
+          padding: 50px;
+        }
+
+        .content {
+          margin: 20px;
+          padding: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Landing Page</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+      <div class="content">
+        <h2>Column 1</h2>
+        <p>
+          This is some sample content. It will adjust its layout based on screen
+          size.
+        </p>
+      </div>
+      <div class="content">
+        <h2>Column 2</h2>
+        <p>
+          This is another column that stacks below the first one on smaller
+          screens.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
